@@ -1,0 +1,167 @@
+/* General styles */
+body {
+  background-color: #fff1e6;
+  /* FFF1E6 */
+  color: #4a4a4a;
+  /* Darker text color */
+  font-family: 'Lora', serif;
+  /* Elegant, feminine font for body text */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Home component styles */
+.home {
+  max-width: 800px;
+  margin: 40px auto;
+  /* Margin on top and bottom */
+  padding: 20px;
+  background-color: #eae4e9;
+  /* EAE4E9 */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.home h2 {
+  color: #d36c6c;
+  /* Soft pink for headings */
+  text-align: center;
+  margin-bottom: 20px;
+  /* Margin below the heading */
+  font-family: 'Dancing Script', cursive;
+  /* Playful heading font */
+}
+
+.createForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.createForm input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #dfe7fd;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #4a4a4a;
+  font-family: 'Lora', serif;
+  transition: border-color 0.3s;
+}
+
+.createForm input:focus {
+  border-color: #d36c6c;
+  outline: none;
+}
+
+/* Button styles */
+.createForm button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e2ece9;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Lora', serif;
+}
+
+.createForm button:hover {
+  background-color: #bee1e6;
+  transform: scale(1.05);
+}
+
+/* Task styles */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: #4a4a4a;
+  font-family: 'Lora', serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Different colors for each task */
+.task:nth-child(1) {
+  background-color: #eae4e9;
+}
+
+.task:nth-child(2) {
+  background-color: #fff1e6;
+}
+
+.task:nth-child(3) {
+  background-color: #fde2e4;
+}
+
+.task:nth-child(4) {
+  background-color: #fad2e1;
+}
+
+.task:nth-child(5) {
+  background-color: #e2ece9;
+}
+
+.task:nth-child(6) {
+  background-color: #bee1e6;
+}
+
+.task:nth-child(7) {
+  background-color: #f0efeb;
+}
+
+.task:nth-child(8) {
+  background-color: #dfe7fd;
+}
+
+.task:nth-child(9) {
+  background-color: #cddafd;
+}
+
+/* Checkbox and Trash icon styles */
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.checkbox:hover .icon {
+  color: #d36c6c;
+}
+
+.checkbox .icon {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #4a4a4a;
+}
+
+.checkbox p {
+  margin: 0;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+.task .icon {
+  cursor: pointer;
+  color: #4a4a4a;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.task .icon:hover {
+  color: #d36c6c;
+}
